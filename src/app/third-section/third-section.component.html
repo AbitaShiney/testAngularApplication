@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row" style="justify-content: center;">
+        
+        <div class="card sensorCard" style="margin-right: 20px;">
+            <div class="card-header">
+                Sensor
+            </div>
+            <div class="card-body">
+                <p>UUID: {{ wsResponse.sensor.uuid }}</p>
+                <p>MOTOR_RPM: {{ wsResponse.sensor.motor_rpm }}</p>
+                <p>Output: {{ wsResponse.sensor.output }}</p>
+            </div>
+        </div>
+      
+
+        
+        <div class="card libarCard">
+            <div class="card-header">
+                Lidar
+            </div>
+            <div class="card-body">
+                <h5>Memory</h5>
+                <p>Total: {{ wsResponse.lidar.memory.total }}</p>
+                <p>Available: {{ wsResponse.lidar.memory.available }}</p>
+            </div>
+            <hr>
+            <h5>CPU</h5>
+            <p>1: {{ wsResponse.lidar.cpu[1] }}</p>
+            <p>2: {{ wsResponse.lidar.cpu[2] }}</p>
+        </div>
+       
+    </div>
+</div>

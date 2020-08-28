@@ -1,0 +1,9 @@
+<ul *ngIf="treeData">
+  <li *ngFor="let node of treeData">
+    <span *ngIf="node.children != 0"><img src="../../assets/icons/folder.svg" style="width: 18px; height: 18px;"></span>
+    <span *ngIf="node.children == 0"><img src="../../assets/icons/caret-right.svg"
+        style="width: 18px; height: 18px;"></span>
+    <span (click)="toggleChild(node)"> {{ node.name }} </span>
+    <app-first-section *ngIf="node.showChildren" [treeData]="node.children"></app-first-section>
+  </li>
+</ul>

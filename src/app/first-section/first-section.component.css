@@ -1,0 +1,17 @@
+li {
+    list-style-type: none;
+}
+
+ul ul ul {
+    list-style-type: square;
+}
+
+.first_section_heading {
+    padding-top: 10px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.card_space {
+    padding-top: 20px;
+}

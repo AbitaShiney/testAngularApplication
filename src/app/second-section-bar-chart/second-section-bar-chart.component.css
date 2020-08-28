@@ -1,0 +1,27 @@
+@media screen and (max-width:768px) {
+canvas {
+    /* width: 1000px !important; */
+    margin: 0 auto;
+     width: 100%;
+    height: auto;
+    /* height: 500px !important; */
+}
+}
+
+.card_space {
+    padding-top: 20px;
+}
+
+@media screen and (max-width:768px) {
+canvas{
+   width: 100%;
+    height: auto;
+}
+}  
+
+@media screen and (max-width:200px) {
+    canvas{
+       width: 100%;
+        height: auto;
+    }
+    }  
